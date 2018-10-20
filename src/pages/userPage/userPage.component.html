@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>User Page</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding class="form-content">
+ 
+    <h1 class="center" >Welcome user: <strong> {{users.userName}} </strong>  </h1>
+
+    <ion-card>
+
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/imgs/placeholder.jpg">
+        </ion-avatar>
+         <h2><strong>Name:</strong>  {{userData.name}}</h2>
+        <h2> <strong>Last Name:</strong> {{userData.lastname}}  </h2>
+         <p>  <strong>Email:</strong> {{userData.email}}</p>
+      </ion-item>
+          </ion-card>
+
+          <button ion-button full type="button" color="danger" (click)="logOut()"  >log Out</button>
+
+
+</ion-content>
+
+<!--
+  
+  <ion-content padding>
+  
+    <h3>Login Page</h3>
+  
+    <p>
+      This starter project is our way of helping you get a functional app running in record time.
+    </p>
+    <p>
+      Follow along on the tutorial section of the Ionic docs!
+    </p>
+    <p>
+      <button ion-button color="primary" menuToggle>Toggle Menu</button>
+    </p>
+  
+
+    <ion-card-header>
+        <h3>  This is my Info </h3> 
+      </ion-card-header>
+  
+      <ion-card-content>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+     Odit cumque tempora voluptas vel porro? Sapiente repellat eligendi possimus, 
+     sed, doloremque, adipisci perferendis quas omnis facere vero eveniet 
+     excepturi exercitationem iusto.Molestiae consequuntur libero sit, 
+    </ion-card-content>
+    </ion-card>
+    <p>My Signature</p>
+
+
+</ion-content>-->

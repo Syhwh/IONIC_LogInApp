@@ -1,9 +1,9 @@
 {
-  "name": "appEjemplo",
+  "name": "userLoginApp",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "ionic-app-scripts serve",
     "clean": "ionic-app-scripts clean",
@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.0",
+    "@ionic/lab": "1.0.11",
     "typescript": "~2.6.2"
   },
   "description": "An Ionic project"

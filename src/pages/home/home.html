@@ -1,14 +1,53 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
+    <ion-title class="center">
+      My Info App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+
+
+  <ion-content padding class="login" >
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4></ion-col>
+        <ion-col col-4 style="margin-left: auto;margin-right: auto;display: block;">
+          <img src="../../assets/imgs/placeholderman.png" class="imageHolder">
+        </ion-col>
+        <ion-col col-4></ion-col>
+      </ion-row>
+    </ion-grid>
+  
+    <form [formGroup]="userForm">
+      <ion-list class="list form" >
+        <ion-item class="input_username">
+          <ion-label  floating class="label" stacked>User Name</ion-label>
+            <ion-input  class="input_element"  [(ngModel)]="username"  name="username"  formControlName="userName"  type="text"></ion-input>
+          </ion-item>
+          <ng-container class="input_username"  *ngFor="let validation of validation_messages.userName">
+            <ion-item class="input_username" *ngIf="userForm.get('userName').hasError(validation.type) && (userForm.get('userName').dirty || userForm.get('userName').touched)">
+              <p class="validation" > {{ validation.message }}</p>
+            </ion-item>
+          </ng-container>
+          
+          <ion-item class="input_password">
+            <ion-label class="label" floating stacked>Password</ion-label>
+            <ion-input class="input_element"  [(ngModel)]="userpassword" name="userpassword" type="password" formControlName="password"   ></ion-input>
+          </ion-item>
+          <ng-container class="input_password" *ngFor="let validation of validation_messages.password">
+            <ion-item  class="input_password" *ngIf="       userForm.get('password').hasError(validation.type) && (userForm.get('password').dirty || userForm.get('password').touched)">
+            <p class="validation"> {{ validation.message }}</p>
+            </ion-item>
+          </ng-container> 
+        </ion-list>
+
+        <button class="button_login" ion-button full [disabled]="!userForm.valid" ion-button (click)="verifyUser(username,userpassword)">Login</button>  
+        
+    <div text-center class="text" (click)="forgotPwd()"> <a> Forgot Password </a> </div>
+    <button ion-button class="button_register" block    (click)="goRegister()">SignUp</button>
+    
+  </form>
+  </ion-content>
+  

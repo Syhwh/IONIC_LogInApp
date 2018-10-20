@@ -1,3 +1,103 @@
-page-home {
+
+.text{
+    text-align: center;
+    text-decoration: underline;
+    margin-top:20px;
+    color:white;
+    font-size: 14px;
+}
+.imageHolder{
+    width:100%;
+    height:auto;
+    border-radius: 100%
+}
+
+.imgcenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.form{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+.button_login{
+    margin-top: 15px;
+    height: 35px;
+    font-size: 14px;
+    background: #10ABF4;
+    color: white;
+}
+.button_register{
+    background-color: transparent;
+    color:white;
+    border-color:white;
+    border:1px solid white;
+    margin-top:20px;
+    height: 35px;
+    font-size: 14px;
+}
+
+
+.input_element {
+    color:white;
+    border-bottom-color:white;
+    box-shadow:none;
+}
+.item_box{
+    padding:0px;
+    border-bottom:none;
+    border-top:none;
+    font-size: 14px;
+    margin-top:10px;
+    background:none;
+    border-bottom:1px solid white;
+    box-shadow:none;
+}
+
+.input_password{
+    padding:0px !important; 
+    font-size: 14px;
+    margin-top:10px;
+    background:none;
+    border-bottom:1px solid white;
+    box-shadow:none;
+}
+
+.input_username{
+    padding:0px !important; 
+    border-bottom:none !important;
+    border-top:none;
+    font-size: 14px;
+    margin-top:10px;
+    background:none;
+    border-bottom:1px solid white;
+    box-shadow:none;
+   
+}
+
+.login{
+    background-image:url('../../assets/imgs/bckground.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    ::-webkit-input-placeholder {
+        color: white !important; 
+      }
+      :-moz-placeholder {
+        color: white !important; 
+      }
+      :-ms-input-placeholder {
+        /* IE10+ */
+        color: white !important; 
+      }
+}
+.label{
+    color: white !important;
+    font-size: 20px!important;
+}
+
+.validation{
+    color: white!important;
 
 }
