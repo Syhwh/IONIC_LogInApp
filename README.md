@@ -9,9 +9,7 @@ Camera implementation
 * User name, Password --> required 
 * User's must be registered to login
 
-![loginpage](https://user-images.githubusercontent.com/35041156/47259786-7b04b100-d474-11e8-9cac-d7fda753a45c.png)
-
-![loginuser](https://user-images.githubusercontent.com/35041156/47259787-7b04b100-d474-11e8-8334-329ba8f61098.png)
+![loginpage](https://user-images.githubusercontent.com/35041156/47259786-7b04b100-d474-11e8-9cac-d7fda753a45c.png) ____![loginuser](https://user-images.githubusercontent.com/35041156/47259787-7b04b100-d474-11e8-8334-329ba8f61098.png)
 
 
 ## Features
@@ -22,7 +20,6 @@ Camera implementation
 *Password. Validation --> minimun lenght. Use of numbersupper case and lowecase characters. Password match
 
 ![registration form](https://user-images.githubusercontent.com/35041156/47259785-7a6c1a80-d474-11e8-9db6-40e4eefaa448.png)
-
 ![registration validation](https://user-images.githubusercontent.com/35041156/47259788-7b04b100-d474-11e8-9d44-4612ddd3269e.png)
 
 
