@@ -55,11 +55,11 @@ userpassword:string;
     console.log('esto es users',users);
     
   if (users.length>0){
-
     for (let i=0; i<users.length; i++){
               if (user==users[i].userName && pass==users[i].userData[0].password){
                 let user_full=users[i]
                 this.navCtrl.push(UserPage,{user_full});
+                break;
               }
               else{
                 this.notregistered() 

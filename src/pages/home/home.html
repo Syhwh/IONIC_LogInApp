@@ -23,7 +23,7 @@
     <form [formGroup]="userForm">
       <ion-list class="list form" >
         <ion-item class="input_username">
-          <ion-label  floating class="label" stacked>User Name</ion-label>
+          <ion-label  floating class="label_login" stacked>User Name</ion-label>
             <ion-input  class="input_element"  [(ngModel)]="username"  name="username"  formControlName="userName"  type="text"></ion-input>
           </ion-item>
           <ng-container class="input_username"  *ngFor="let validation of validation_messages.userName">
@@ -33,7 +33,7 @@
           </ng-container>
           
           <ion-item class="input_password">
-            <ion-label class="label" floating stacked>Password</ion-label>
+            <ion-label class="label_login" floating stacked>Password</ion-label>
             <ion-input class="input_element"  [(ngModel)]="userpassword" name="userpassword" type="password" formControlName="password"   ></ion-input>
           </ion-item>
           <ng-container class="input_password" *ngFor="let validation of validation_messages.password">

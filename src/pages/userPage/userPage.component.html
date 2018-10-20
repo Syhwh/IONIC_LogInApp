@@ -6,6 +6,12 @@
       <ion-title>User Page</ion-title>
     </ion-navbar>
 </ion-header>
+
+
+
+
+
+
 <ion-content padding class="form-content">
  
     <h1 class="center" >Welcome user: <strong> {{users.userName}} </strong>  </h1>
@@ -25,37 +31,20 @@
           <button ion-button full type="button" color="danger" (click)="logOut()"  >log Out</button>
 
 
+
+
+
+
+
+          <img [src]="currentImage" *ngIf="currentImage" id="camera-image">
+   
+          <ion-fab center bottom>
+            <button ion-fab (click)="takePicture()">
+               <ion-icon name="camera"></ion-icon>
+             </button>
+           </ion-fab>
+        
+
+
+
 </ion-content>
-
-<!--
-  
-  <ion-content padding>
-  
-    <h3>Login Page</h3>
-  
-    <p>
-      This starter project is our way of helping you get a functional app running in record time.
-    </p>
-    <p>
-      Follow along on the tutorial section of the Ionic docs!
-    </p>
-    <p>
-      <button ion-button color="primary" menuToggle>Toggle Menu</button>
-    </p>
-  
-
-    <ion-card-header>
-        <h3>  This is my Info </h3> 
-      </ion-card-header>
-  
-      <ion-card-content>
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-     Odit cumque tempora voluptas vel porro? Sapiente repellat eligendi possimus, 
-     sed, doloremque, adipisci perferendis quas omnis facere vero eveniet 
-     excepturi exercitationem iusto.Molestiae consequuntur libero sit, 
-    </ion-card-content>
-    </ion-card>
-    <p>My Signature</p>
-
-
-</ion-content>-->

@@ -11,6 +11,8 @@ import {RegisterComponent} from '../pages/register/register.component'
 
 import {UsersService} from '../app/services/users.service'
 
+import { Camera } from '@ionic-native/camera';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -35,6 +37,7 @@ import {UsersService} from '../app/services/users.service'
     StatusBar,
     SplashScreen,
     UsersService,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
